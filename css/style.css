@@ -1,0 +1,321 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Futura PT;
+}
+
+body .wrapper {
+  max-width: 1920px;
+  margin: 0 auto;
+  padding: 0 80px;
+}
+
+body .wrapper header {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .wrapper header h1,
+body .wrapper header a {
+  color: #a89365;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+body .wrapper header h1 {
+  font-style: extra-Bold;
+  font-size: 48px;
+}
+
+body .wrapper header a {
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: normal;
+}
+
+body .wrapper main {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+}
+
+body .wrapper main .card {
+  width: 410px;
+  border: none;
+  margin-right: 40px;
+}
+
+body .wrapper main .card img {
+  width: 100%;
+}
+
+body .wrapper main .card h2 {
+  color: #a89365;
+  font-size: 32px;
+}
+
+body .wrapper main .card p {
+  color: #575757;
+}
+
+body .wrapper main .arrows img {
+  width: 16px;
+  height: 32px;
+  cursor: pointer;
+  position: absolute;
+  top: 30%;
+}
+
+body .wrapper main .arrows img:first-of-type {
+  left: -32px;
+}
+
+body .wrapper main .arrows img:last-of-type {
+  right: -32px;
+}
+
+body .wrapper .btns {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body .wrapper .btns button {
+  cursor: pointer;
+  color: #a89365;
+  border: 1px solid #a89365;
+  background-color: #fff;
+  padding: 5px 20px;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+body .wrapper .btns button:hover {
+  color: #fff;
+  background-color: #a89365;
+}
+
+body .wrapper .btns button:first-child {
+  margin-right: 40px;
+}
+
+body > div > main > div:nth-child(4) {
+  margin-right: 0 !important;
+}
+
+.indicators {
+  display: none;
+}
+
+.indicators div {
+  width: 12px;
+  height: 12px;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
+  background-color: #f2f2f2;
+  cursor: pointer;
+}
+
+.indicators div.active {
+  background-color: #a89365;
+}
+
+@media screen and (max-width: 1280px) {
+  body .wrapper {
+    padding: 0 40px;
+  }
+  body .wrapper header h1 {
+    font-size: 32px;
+  }
+  body .wrapper main .card h2 {
+    font-size: 24px;
+  }
+}
+
+@media screen and (max-width: 1279px) {
+  body .wrapper {
+    width: 600px;
+    padding: 0 20px;
+  }
+  body .wrapper main {
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+  }
+  body .wrapper main .card {
+    width: 270px;
+    margin: 0;
+  }
+  body .wrapper main .card:nth-child(odd) {
+    margin-right: 20px;
+  }
+  .arrows {
+    display: none;
+  }
+  body .wrapper .btns {
+    display: block;
+  }
+  body .wrapper .btns button {
+    width: 100%;
+  }
+  body .wrapper .btns button:first-child {
+    margin: 0 0 20px 0;
+  }
+  body .wrapper .btns button:last-child {
+    background-color: #a89365;
+    color: #fff;
+  }
+  .indicators {
+    width: 100%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .indicators div.hidden {
+    display: none;
+  }
+  .indicators div {
+    margin: 0 20px 20px 0;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  body .wrapper {
+    padding: 0 20px;
+  }
+  body .wrapper main {
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+  }
+  body .wrapper main .card {
+    width: 270px;
+    margin: 0;
+  }
+  body .wrapper main .card:nth-child(odd) {
+    margin-right: 20px;
+  }
+  .arrows {
+    display: none;
+  }
+  body .wrapper .btns {
+    display: block;
+  }
+  body .wrapper .btns button {
+    width: 100%;
+  }
+  body .wrapper .btns button:first-child {
+    margin: 0 0 20px 0;
+  }
+  body .wrapper .btns button:last-child {
+    background-color: #a89365;
+    color: #fff;
+  }
+  .indicators {
+    width: 100%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .indicators div.hidden {
+    display: none;
+  }
+  .indicators div {
+    margin: 0 20px 20px 0;
+  }
+}
+
+@media screen and (max-width: 599px) {
+  body .wrapper {
+    width: 320px;
+    padding: 0 10px;
+  }
+  body .wrapper header {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+    -webkit-align-items: flex-start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  body .wrapper header h1 {
+    font-size: 24px;
+  }
+  body .wrapper main .card {
+    width: 300px;
+    margin-right: 0;
+  }
+  .indicators div.hidden {
+    display: block;
+  }
+  .indicators div.hidden:last-of-type {
+    margin-right: 0;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  body .wrapper {
+    padding: 0 10px;
+  }
+  body .wrapper header {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+    -webkit-align-items: flex-start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  body .wrapper header h1 {
+    font-size: 24px;
+  }
+  body .wrapper main .card {
+    width: 300px;
+    margin-right: 0;
+  }
+  .indicators div.hidden {
+    display: block;
+  }
+  .indicators div.hidden:last-of-type {
+    margin-right: 0;
+  }
+}
+/*# sourceMappingURL=style.css.map */
